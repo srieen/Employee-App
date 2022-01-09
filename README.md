@@ -6,7 +6,7 @@ do docker compose up -- to build and run in docker.
 
 and 
 
-kubectl apply -f /kubernetes
+`kubectl apply -f /kubernetes`
 
 this will create /deployments and service in k8
 
@@ -16,4 +16,4 @@ create an employee record and will list all the employees.
 
 shutdown k8 
 
-kubectl delete -f /kubernetes
+`kubectl delete -f /kubernetes`
