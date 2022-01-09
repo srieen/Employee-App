@@ -10,7 +10,7 @@ and
 
 this will create /deployments and service in k8
 
-try in http://locahost  -> this will launch the webapp.
+try in http://localhost  -> this will launch the webapp.
 
 create an employee record and will list all the employees.
 
