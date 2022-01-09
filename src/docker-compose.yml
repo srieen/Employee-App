@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  employee-api:
+    image: ${DOCKER_REGISTRY-}employee-api
+    build:
+      context: .
+      dockerfile: Employee-API/Dockerfile
+    ports:
+      - "8502:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - SimpleProperty="hello-from-code-compose-API"
+
+  employee-ui:
+    image: ${DOCKER_REGISTRY-}employee-ui
+    build:
+      context: .
+      dockerfile: Employee-UI/Dockerfile
+    ports:
+      - "8503:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - SimpleProperty="hello-from-code-compose-UI"

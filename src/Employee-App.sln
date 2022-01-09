@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee-UI", "Employee-UI\Employee-UI.csproj", "{288F4A50-1076-49A3-8097-8006229A2F8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee-API", "Employee-API\Employee-API.csproj", "{B0B699CE-B580-40BB-9156-0CCD7509C5B6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{89359376-A81E-4E6A-90AE-7907FA94B099}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7128EC5-2532-4981-8339-50F9B180436A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8", "K8", "{7AD18A46-26FC-4BBF-A606-022B1084F2BB}"
+	ProjectSection(SolutionItems) = preProject
+		..\kubernetes\empapp-api-deployment.yml = ..\kubernetes\empapp-api-deployment.yml
+		..\kubernetes\empapp-api-svc-1.yml = ..\kubernetes\empapp-api-svc-1.yml
+		..\kubernetes\empapp-ui-deployment.yml = ..\kubernetes\empapp-ui-deployment.yml
+		..\kubernetes\empapp-ui-svc-2.yml = ..\kubernetes\empapp-ui-svc-2.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{288F4A50-1076-49A3-8097-8006229A2F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288F4A50-1076-49A3-8097-8006229A2F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288F4A50-1076-49A3-8097-8006229A2F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288F4A50-1076-49A3-8097-8006229A2F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B699CE-B580-40BB-9156-0CCD7509C5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B699CE-B580-40BB-9156-0CCD7509C5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B699CE-B580-40BB-9156-0CCD7509C5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B699CE-B580-40BB-9156-0CCD7509C5B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89359376-A81E-4E6A-90AE-7907FA94B099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89359376-A81E-4E6A-90AE-7907FA94B099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89359376-A81E-4E6A-90AE-7907FA94B099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89359376-A81E-4E6A-90AE-7907FA94B099}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AD18A46-26FC-4BBF-A606-022B1084F2BB} = {E7128EC5-2532-4981-8339-50F9B180436A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AE1168A-6B5D-4CC2-9B61-B00967E8CF6A}
+	EndGlobalSection
+EndGlobal

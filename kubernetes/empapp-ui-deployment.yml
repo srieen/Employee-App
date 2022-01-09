@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: empui
+  labels:
+    app: emp-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: empui
+  template:
+    metadata:
+      labels:
+        app: emp-app
+        service: empui
+    spec:
+      containers:
+        - name: empui
+          image: employee-ui
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi" # 128 mb
+              cpu: "200m" # 20% cpu
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: EmployeeAPIUrl
+              value: http://empapi
